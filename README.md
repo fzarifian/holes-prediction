@@ -47,6 +47,10 @@ The full protocol, the success criteria and the tables are in
 | `results/fields.json` | Earlier measurements (radii 500 to 4600) used to fit the model |
 | `verification/` | Measurements at radii 10⁴ to 10⁵ and evaluation output (added after the prediction release) |
 | `RESULTS.md` | Outcome of the test |
+| `PREREGISTRATION_v2.md` | Second test: protocol, criteria, predictions, fingerprints |
+| `predict2.py`, `make_predictions2.py` | Second model (pair correlations) and the script that produced its predictions |
+| `verify2.py`, `evaluate2.py` | Measurement and evaluation code of the second test (frozen) |
+| `predictions_v2/predictions_v2.json` | All predictions of the second test |
 
 To check that the files have not changed since this release:
 
@@ -63,6 +67,18 @@ Requirements: Python 3 with numpy and scipy.
 **Outcome:** the direction of the bias was predicted correctly in 36 of 36 tested classes (primary
 criterion, success) and in 33 of 34 prime ideals; the record radius itself was mispredicted by one or
 two lattice shells in most configurations (failure), and with it most of the predicted scales of reversal.
+
+### Second test (radii 2×10⁵ to 10⁶)
+
+The first model treated nearby primes as independent. The second model adds the pair correlations of the
+Hardy–Littlewood conjectures and drops the fitted constant: it has no free parameter. On the 54
+configurations already measured it gives the record radius exactly in 41 cases (25 for the first model)
+and within one lattice shell in 53. Since those data were used to develop it, it is tested again, blind,
+at radii never measured.
+
+- [x] Predictions frozen (25 November 2026, release `v2.0-prediction`): see [`PREREGISTRATION_v2.md`](PREREGISTRATION_v2.md)
+- [ ] Measurement at radii 2×10⁵ to 10⁶
+- [ ] Evaluation against the pre-registered criteria
 
 ## License
 
