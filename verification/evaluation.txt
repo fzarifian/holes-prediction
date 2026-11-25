@@ -1,0 +1,11 @@
+P1 (omega classes, conditional on measured r*): SUCCESS: 36/36 = 100% correct side, one-sided binomial p = 1.5e-11
+    among pairs whose bootstrap interval excludes 1: 35/35
+P2 (record radius): exact 5/27, within one shell 20/27 -> FAILURE
+P3 (ideals, conditional on measured r*): SUCCESS: 33/34 = 97% correct side, one-sided binomial p = 2.0e-09
+P4 (predicted sign changes between test radii, at predicted r*): 2/6 observed
+    D=-8 omega=0: R=10000 pred 1.30 obs 2.19 | R=31623 pred 0.83 obs 1.32 -> not observed
+    D=-8 omega=4: R=10000 pred 0.90 obs 1.02 | R=31623 pred 1.29 obs 1.32 -> not observed
+    D=-8 omega=0: R=31623 pred 0.83 obs 1.32 | R=100000 pred 1.35 obs 1.02 -> not observed
+    D=-8 omega=3: R=31623 pred 1.12 obs 1.00 | R=100000 pred 0.89 obs 0.96 -> not observed
+    D=-11 omega=3: R=10000 pred 1.12 obs 1.08 | R=31623 pred 0.87 obs 0.80 -> observed
+    D=-11 omega=4: R=10000 pred 1.33 obs 1.08 | R=31623 pred 0.90 obs 0.84 -> observed

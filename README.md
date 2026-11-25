@@ -45,6 +45,8 @@ The full protocol, the success criteria and the tables are in
 | `verify.py` | The measurement code that will be run on the new radii (frozen) |
 | `evaluate.py` | Applies the success criteria to the measurements (frozen) |
 | `results/fields.json` | Earlier measurements (radii 500 to 4600) used to fit the model |
+| `verification/` | Measurements at radii 10⁴ to 10⁵ and evaluation output (added after the prediction release) |
+| `RESULTS.md` | Outcome of the test |
 
 To check that the files have not changed since this release:
 
@@ -54,9 +56,13 @@ Requirements: Python 3 with numpy and scipy.
 
 ## Status
 
-- [x] Predictions frozen (25 November 2026)
-- [ ] Measurement at radii 10⁴ to 10⁵
-- [ ] Evaluation against the pre-registered criteria
+- [x] Predictions frozen (25 November 2026, release `v1.0-prediction`)
+- [x] Measurement at radii 10⁴ to 10⁵ (`verification/measurements.json`)
+- [x] Evaluation against the pre-registered criteria: see [`RESULTS.md`](RESULTS.md)
+
+**Outcome:** the direction of the bias was predicted correctly in 36 of 36 tested classes (primary
+criterion, success) and in 33 of 34 prime ideals; the record radius itself was mispredicted by one or
+two lattice shells in most configurations (failure), and with it most of the predicted scales of reversal.
 
 ## License
 
