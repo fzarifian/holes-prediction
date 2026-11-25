@@ -1,0 +1,11 @@
+P1 (co-primary, omega classes, conditional on measured r*): SUCCESS: 27/28 = 96% correct side, one-sided binomial p = 1.1e-07
+    among pairs whose bootstrap interval excludes 1: 27/27
+P2 (co-primary, record radius): exact 22/27, within one shell 27/27 -> SUCCESS
+P3 (ideals, conditional on measured r*): SUCCESS: 43/45 = 96% correct side, one-sided binomial p = 2.9e-11
+P4 (predicted reversals between test radii, at predicted r*): 6/6 observed -> SUCCESS
+    D=-4 omega=0: R=200000 pred 0.75 obs 0.71 | R=450000 pred 1.36 obs 1.33 -> observed
+    D=-4 omega=3: R=200000 pred 1.35 obs 1.40 | R=450000 pred 0.86 obs 0.97 -> observed
+    D=-4 omega=0: R=450000 pred 1.36 obs 1.33 | R=1000000 pred 0.72 obs 0.68 -> observed
+    D=-4 omega=3: R=450000 pred 0.86 obs 0.97 | R=1000000 pred 1.14 obs 1.16 -> observed
+    D=-7 omega=0: R=200000 pred 0.75 obs 0.85 | R=450000 pred 1.26 obs 1.12 -> observed
+    D=-8 omega=0: R=450000 pred 0.84 obs 0.95 | R=1000000 pred 1.26 obs 1.40 -> observed

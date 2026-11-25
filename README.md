@@ -51,6 +51,7 @@ The full protocol, the success criteria and the tables are in
 | `predict2.py`, `make_predictions2.py` | Second model (pair correlations) and the script that produced its predictions |
 | `verify2.py`, `evaluate2.py` | Measurement and evaluation code of the second test (frozen) |
 | `predictions_v2/predictions_v2.json` | All predictions of the second test |
+| `verification_v2/`, `RESULTS_v2.md` | Measurements and outcome of the second test |
 
 To check that the files have not changed since this release:
 
@@ -77,8 +78,13 @@ and within one lattice shell in 53. Since those data were used to develop it, it
 at radii never measured.
 
 - [x] Predictions frozen (25 November 2026, release `v2.0-prediction`): see [`PREREGISTRATION_v2.md`](PREREGISTRATION_v2.md)
-- [ ] Measurement at radii 2×10⁵ to 10⁶
-- [ ] Evaluation against the pre-registered criteria
+- [x] Measurement at radii 2×10⁵ to 10⁶ (`verification_v2/measurements_v2.json`)
+- [x] Evaluation against the pre-registered criteria: see [`RESULTS_v2.md`](RESULTS_v2.md)
+
+**Outcome:** all four pre-registered criteria are met. Record radius exact in 22 of 27 configurations and
+within one lattice shell in all 27; direction of the bias correct in 27 of 28 classes and 43 of 45 prime
+ideals; the 6 predicted reversals of the bias between scales were all observed (two of them only
+marginally).
 
 ## License
 
