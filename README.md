@@ -52,6 +52,7 @@ The full protocol, the success criteria and the tables are in
 | `verify2.py`, `evaluate2.py` | Measurement and evaluation code of the second test (frozen) |
 | `predictions_v2/predictions_v2.json` | All predictions of the second test |
 | `verification_v2/`, `RESULTS_v2.md` | Measurements and outcome of the second test |
+| `diagnose_tail_v2.py` | Post hoc diagnostic of the record-radius misses (addendum to `RESULTS_v2.md`) |
 
 To check that the files have not changed since this release:
 

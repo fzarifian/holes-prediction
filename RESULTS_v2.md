@@ -38,3 +38,23 @@ published, by a model with no fitted parameter.
 | Bias direction at measured r* | 36 / 36 | 27 / 28 |
 | Record radius exact / within one shell | 5 / 27, 20 / 27 | 22 / 27, 27 / 27 |
 | Predicted reversals observed | 2 / 6 | 6 / 6 |
+
+---
+
+## Addendum (25 November 2026, after release `v2.1-verification`): why the record radius was missed
+
+This addendum is a post hoc analysis. It does not change any of the pre-registered verdicts above, nor
+any measured value; it uses the code `diagnose_tail_v2.py` and writes `verification_v2/tail_diagnostics.json`.
+
+**The five misses are knife-edge cases.** Since h only takes the discrete values of lattice distances,
+r* jumps from one shell to the next when the tail probability P(h ≥ d) crosses 1/1000. In all five
+misses the model placed this probability within 3.2% of the threshold, closer than its own typical error
+and than the sampling fluctuation (between about 600 and 1 800 holes per configuration). Among the 9
+configurations where the margin was below 4%, 4 were hits and 5 misses, as for a coin toss; among the
+18 configurations with a larger margin, all 18 were hits.
+
+**The model's tail probability is accurate to about 5%.** Over the 108 (configuration, lattice shell)
+pairs around r*, the predicted P(h ≥ d) matches the measured one to within 4.8% (median), with a slight
+overestimate on average (−3%), largest for D = −7 (−8%). This residual bias is what tips the knife-edge
+cases for D = −7 to the smaller shell. Reducing it (correlations between three or more nearby primes) is
+the next step for the model, and would need a new blind test.
